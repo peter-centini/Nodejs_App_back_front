@@ -1,0 +1,126 @@
+App {
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+span {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 19px;
+    margin-top: 20px;
+}
+
+.books {
+    display: flex;
+    gap: 10px;
+
+}
+
+.title_book {
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.book {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.delete {
+width:90px;
+    border: none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(242, 100, 100);
+    font-size: 14px;
+}
+
+.update {
+width: 90px;
+    padding: 3px 6px;
+    background-color: rgb(179, 245, 153);
+    cursor: pointer;
+    border: 1px solid rgb(194, 197, 244);
+    color: rgb(125, 125, 234);
+    font-size: 14px;
+}
+
+.newbook {
+    border-radius: 50px;
+    font-size: 15px bold;
+    background-color: rgb(170, 244, 140);
+    border: none;
+    margin-top: 80px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+textarea {
+    padding: 10px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_return {
+    background-color: transparent;
+}
+
+.btn_home a {
+    border-radius: 50px;
+    background-color: rgb(170, 244, 140);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin: 10px 10px;
+    padding: 10px;
+    text-decoration: none;
+}
