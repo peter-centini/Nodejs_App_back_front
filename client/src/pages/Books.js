@@ -30,7 +30,7 @@ const Books = () => {
     }
     
   return (
-      <div>
+      <div className="container">
           <div>
           <h1 className="title_book">Peter Books</h1>
           </div>

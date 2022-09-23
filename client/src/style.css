@@ -1,3 +1,28 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
 App {
     height: 100vh;
     padding: 0px 100px;
@@ -5,10 +30,15 @@ App {
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
+/* .container{
+display: flex;
+flex-wrap: wrap;
+} */
 span {
-    flex: 1 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -16,11 +46,16 @@ span {
     align-content: center;
     margin-bottom: 19px;
     margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
 }
 
 .books {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -30,6 +65,7 @@ span {
 }
 
 h2 {
+    background-color: white;
     margin-top: 30px;
 }
 
@@ -39,6 +75,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-block: 30px;
 }
 
 img {
@@ -47,11 +84,13 @@ img {
     object-fit: cover;
     background-color: aquamarine;
     box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 30px;
 }
 
 .delete {
-width:90px;
+    width: 90px;
     border: none;
+    border-radius: 30px;
     padding: 3px 6px;
     background-color: white;
     cursor: pointer;
@@ -61,11 +100,12 @@ width:90px;
 }
 
 .update {
-width: 90px;
+    width: 90px;
     padding: 3px 6px;
     background-color: rgb(179, 245, 153);
     cursor: pointer;
-    border: 1px solid rgb(194, 197, 244);
+    border-radius: 30px;
+    /* border: 1px solid rgb(194, 197, 244); */
     color: rgb(125, 125, 234);
     font-size: 14px;
 }
@@ -76,6 +116,7 @@ width: 90px;
     background-color: rgb(170, 244, 140);
     border: none;
     margin-top: 80px;
+    margin-bottom: 100px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -115,12 +156,28 @@ button {
     background-color: transparent;
 }
 
+p {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
+.btn_home {
+    background-color: transparent;
+}
+
 .btn_home a {
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: rgb(170, 244, 140);
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     margin: 10px 10px;
     padding: 10px;
     text-decoration: none;
+}
+
+.formButton {
+    border-radius: 30px;
+    background-color: #23d5ab;
+    font-family: 'Courier New', Courier, monospace;
 }

@@ -1,13 +1,24 @@
 import mysql from "mysql";
 import express from "express";
 import cors from "cors";
+import * as dotenv from 'dotenv' //import dotenv pour acces db externe 
+dotenv.config() //mise en place de la fonction dotenv
+
+
 
 const app = express()
+
+
 const db = mysql.createConnection({
-    host: "192.168.0.15",
-    user: "domotique",
-    password: "domotique",
-    database: "test"
+    host: process.env.DB_HOST,
+    port: process.env.PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    // host: "192.168.0.15",
+    // user: "domotique",
+    // password: "domotique",
+    // database: "test"
     })
 
 // s'il y a un problème d'authentification
