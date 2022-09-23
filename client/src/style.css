@@ -79,9 +79,9 @@ h2 {
 }
 
 img {
-    width: 250px;
+    width: 250px;                   
     height: 250px;
-    object-fit: cover;
+    object-fit: container;
     background-color: aquamarine;
     box-shadow: 5px 5px 15px 5px #000000;
     border-radius: 30px;
@@ -115,10 +115,13 @@ img {
     font-size: 15px bold;
     background-color: rgb(170, 244, 140);
     border: none;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 9px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
+}
+.addBook{
+    margin-bottom: 90px;
 }
 
 a {
