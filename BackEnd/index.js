@@ -1,11 +1,11 @@
 import mysql from "mysql";
 import express from "express";
 import cors from "cors";
-import * as dotenv from 'dotenv' //import dotenv pour acces db externe 
+import * as dotenv from 'dotenv' //import dotenv pour acces db externe mysql
+
+
 dotenv.config() //mise en place de la fonction dotenv
-
-
-
+const port = 8000
 const app = express()
 
 
@@ -77,6 +77,6 @@ app.put("/books/:id", (req, res) => {
 })
 
 app.listen(8000, () => {
-    console.log("connected to backEnd port 8000")
+    console.log(`Connecter au Backend sur le Port ${port}`)
 });
 
