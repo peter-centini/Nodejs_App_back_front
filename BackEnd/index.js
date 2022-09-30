@@ -15,10 +15,6 @@ const db = mysql.createConnection({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    // host: "192.168.0.15",
-    // user: "domotique",
-    // password: "domotique",
-    // database: "test"
     })
 
 // s'il y a un problème d'authentification
